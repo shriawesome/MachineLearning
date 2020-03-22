@@ -15,9 +15,9 @@
 		* Different Classifiers show different sensitivity to correlation.
 
 	* PERSON'S CORRELATION COEFFICIENT
-		* ```SUM((X_1-\overline{X}_1)*(X_2-\overline{X]_2)*(X_n-\overline{X}_n)) \mid \Var(X_1)*\Var(X_2)*\Var(X_n) 
-				```
-
+	 	* ```
+       	      SUM((X1-X1mean)*(X2-X2mean)*(Xn-Xnmean)) / Var(X1)*Var(X2)*Var(Xn) 
+       		``` 
 		* Pearson's coefficient values vary between 1 and -1:
 			* 1 is highly correlated: the more of x1, the more of x2
 			* -1 is highly correlated: the more of x1,the less of x2
