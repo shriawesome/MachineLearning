@@ -1,0 +1,3 @@
+NOTE:
+1. For opening ipynb use the link below
+	'https://nbviewer.jupyter.org'
