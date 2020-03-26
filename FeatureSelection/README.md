@@ -23,3 +23,26 @@
 			* -1 is highly correlated: the more of x1,the less of x2
 
 	* For implementation refer to Correlation_FE.ipynb and Filter_method.ipynb
+
+	--- 
+2. Statistical Methods with Filter Methods -
+	Several methods that rely on Filter methods for Feature Selection :
+		Statistical Methods
+		|- Information Gain
+		|- Fisher Score
+		|- Univariate Tests
+		|- Univariate roc-auc/rmse
+
+		[Note: 
+		1. None of the above methods take into consideration variable redundancy.
+		2. All the dependency is checked in the light of target variables.]
+
+	* Information Gain / Mutual Information
+		* Mesures how much information the presence/absence of a feature contributes to making the correct prediction on Y.
+		* MI measures the information that X and Y share: how much knowing one can reduce uncertainty about the other.
+		* If X and Y are independent, then knowing X does not give any inforamation about Y and vice versa.
+		* MI is the same as the ```entropy of X``` and as the ```entropy of Y```.
+		* Popular scikit learn modules :-
+			* ```sklearn.feature_selection - mutual_info_classify and mutual_info_regression```		
+
+	--- 
