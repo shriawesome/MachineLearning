@@ -43,6 +43,13 @@
 		* If X and Y are independent, then knowing X does not give any inforamation about Y and vice versa.
 		* MI is the same as the ```entropy of X``` and as the ```entropy of Y```.
 		* Popular scikit learn modules :-
-			* ```sklearn.feature_selection - mutual_info_classify and mutual_info_regression```		
+			* ```sklearn.feature_selection - mutual_info_classify and mutual_info_regression```	
+
+	* Fisher Score - Chi-square implementation in sklearn
+		* This score should be used to evaluate `Categorical Variables` in a `Classification` tasks.
+		* Compute chi-squared stats between each non-negative feature and Class.
+		* It compares observed distribution of the different classes of Y among different categories of the feature, against the expected distribution of the target classes, regardless of the feature categories.
+		* Popular scikit learn modules :-
+			* `sklearn.feature_selection -  chi2` 	
 
 	--- 
