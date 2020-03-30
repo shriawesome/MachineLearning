@@ -28,10 +28,10 @@
 2. Statistical Methods with Filter Methods -
 	Several methods that rely on Filter methods for Feature Selection :
 		Statistical Methods
-		|- Information Gain
-		|- Fisher Score
-		|- Univariate Tests
-		|- Univariate roc-auc/rmse
+<br>	|- Information Gain
+<br>	|- Fisher Score
+<br>	|- Univariate Tests
+<br>	|- Univariate roc-auc/rmse
 
 		[Note: 
 		1. None of the above methods take into consideration variable redundancy.
