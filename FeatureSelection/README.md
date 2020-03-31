@@ -27,7 +27,7 @@
 	--- 
 2. Statistical Methods with Filter Methods -
 	Several methods that rely on Filter methods for Feature Selection :
-<br>	xStatistical Methods
+<br>	Statistical Methods
 <br>	|- Information Gain
 <br>	|- Fisher Score
 <br>	|- Univariate Tests
