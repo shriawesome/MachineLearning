@@ -27,7 +27,7 @@
 	--- 
 2. Statistical Methods with Filter Methods -
 	Several methods that rely on Filter methods for Feature Selection :
-<br>	Statistical Methods
+<br>	xStatistical Methods
 <br>	|- Information Gain
 <br>	|- Fisher Score
 <br>	|- Univariate Tests
@@ -50,6 +50,13 @@
 		* Compute chi-squared stats between each non-negative feature and Class.
 		* It compares observed distribution of the different classes of Y among different categories of the feature, against the expected distribution of the target classes, regardless of the feature categories.
 		* Popular scikit learn modules :-
-			* `sklearn.feature_selection -  chi2` 	
+			* `sklearn.feature_selection -  chi2` 
+
+	* Univariate Feature Selection(ANOVA)
+		* It works by selecting the features based on univariate statistical tests(ANOVA).
+		* The methods based on F-test estimates the degree of linear dependency between the feature and the target.
+		* These methods also assume that the variables follow Gaussian distribution.
+		* Popular scikit learn modules :-
+			* `sklearn.feature_selection - f_classif,f_regression`	
 
 	--- 
