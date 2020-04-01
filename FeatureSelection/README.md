@@ -57,6 +57,15 @@
 		* The methods based on F-test estimates the degree of linear dependency between the feature and the target.
 		* These methods also assume that the variables follow Gaussian distribution.
 		* Popular scikit learn modules :-
-			* `sklearn.feature_selection - f_classif,f_regression`	
+			* `sklearn.feature_selection - f_classif,f_regression`
+
+	* Univariate ROC-AUC or MSE
+		* First it works by building a ML model with the given feature, to predict the target.
+		* Typically decision tree is used for predicting in classification problem.
+		* Second, it makes predictions using the model and the mentioned feature.
+		* Third, it ranks the features accoding to the ML metric(roc-aur or mse).	
+		* It then selects the highest ranked features
+		* Popular scikit learn modules :-
+			* `sklearn.metrics - roc_auc_score, mean_squared_error`
 
 	--- 
