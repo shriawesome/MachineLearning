@@ -1,3 +1,8 @@
 NOTE:
-1. For opening ipynb use the link below
+1. For opening large ipynb use the link below
 	'https://nbviewer.jupyter.org'
+
+2. I would suggest to use a virtual environment like conda/anaconda.
+	'https://conda.io'
+
+3. With the conda environment you'll get preinstalled Python3 and some preinstalled data science modules like scikitlearn, Pandas. numpy etc.
