@@ -69,30 +69,30 @@
 				* `sklearn.metrics - roc_auc_score, mean_squared_error`
 
 	---
-	
+
 2. WRAPPER METHODS FOR FEATURE EXTRACTION -
-		* Can also be termed as Greedy Algorithm for feature selection.
-		* Selects a feature by optimising performance of a specific ML model.
-		* If follows a sequential process to select the features i.e. sequential FS algorithm adds/removes feature at the time based on classifier performance
+	* Can also be termed as Greedy Algorithm for feature selection.
+	* Selects a feature by optimising performance of a specific ML model.
+	* If follows a sequential process to select the features i.e. sequential FS algorithm adds/removes feature at the time based on classifier performance
 		until a feature subset of the desired size 'k' is reached, or any other criteria is met.
-		* 3 techniques broadly used in wrapper method:-
+	* 3 techniques broadly used in wrapper method:-
 <br> |- Step Forward Feature selection
 <br> |- Step Backward Feature selection
 <br> |- Exhaustive Feature Selection
 
-		* Step Forward Feature Selection method Procedure:
-			1. Evaluate all subsets of 1 features.
-			2. Choose the one that performs the best.
-			3. Evaluate all the subsets of 2 features(the first selected and other).
-			4. Evaluate algorithm performance.
-			5. Repeat until criteria is met.
+	* Step Forward Feature Selection method Procedure:
+		1. Evaluate all subsets of 1 features.
+		2. Choose the one that performs the best.
+		3. Evaluate all the subsets of 2 features(the first selected and other).
+		4. Evaluate algorithm performance.
+		5. Repeat until criteria is met.
 
-		* Step backward works in the same fashion but by removing the feature one by one.
-		* Exhaustive FS :
-			1. Makes all possible feature subsets from 1 to n(Total features).
-			2. The one with the best performance is selected.
+	* Step backward works in the same fashion but by removing the feature one by one.
+	* Exhaustive FS :
+		1. Makes all possible feature subsets from 1 to n(Total features).
+		2. The one with the best performance is selected.
 
-		* DISADVANTAGE :-
-			* Feature space optimised for specific algorithm.
-			* Extremely computationally expensive.
-			* Often not feasible because of number of features.
+	* DISADVANTAGE :-
+		* Feature space optimised for specific algorithm.
+		* Extremely computationally expensive.
+		* Often not feasible because of number of features.
