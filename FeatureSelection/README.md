@@ -75,15 +75,17 @@
 		* Selects a feature by optimising performance of a specific ML model.
 		* If follows a sequential process to select the features i.e. sequential FS algorithm adds/removes feature at the time based on classifier performance
 		until a feature subset of the desired size 'k' is reached, or any other criteria is met.
-		* <br> 3 techniques broadly :-
-			<br> |- Step Forward Feature selection
-			<br> |- Step Backward Feature selection
-			<br> |- Exhaustive Feature Selection
+		* 3 techniques broadly used in wrapper method:-
+<br> |- Step Forward Feature selection
+<br> |- Step Backward Feature selection
+<br> |- Exhaustive Feature Selection
 
-		* Step Forward Feature Selection method :<br>
-				Evaluate all subsets  -> Choose the one that  ->	Evaluate all subsets of	-> Evaluate algorithm Performance -> Repeat until criteria is met.
-		<br>of 1 features 				<br> performs the best  <br>2 features(the first
-																											<br>selected and other).
+		* Step Forward Feature Selection method Procedure:
+			1. Evaluate all subsets of 1 features.
+			2. Choose the one that performs the best.
+			3. Evaluate all the subsets of 2 features(the first selected and other).
+			4. Evaluate algorithm performance.
+			5. Repeat until criteria is met.
 
 		* Step backward works in the same fashion but by removing the feature one by one.
 		* Exhaustive FS :
