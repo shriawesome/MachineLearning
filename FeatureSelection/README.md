@@ -70,7 +70,7 @@
 
 	---
 
-	2. WRAPPER METHODS FOR FEATURE EXTRACTION -
+2. WRAPPER METHODS FOR FEATURE EXTRACTION -
 		* Can also be termed as Greedy Algorithm for feature selection.
 		* Selects a feature by optimising performance of a specific ML model.
 		* If follows a sequential process to select the features i.e. sequential FS algorithm adds/removes feature at the time based on classifier performance
