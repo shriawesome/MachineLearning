@@ -70,7 +70,8 @@
 
 	---
 
-	
+1. FILTER METHODS - CORRELATION
+
 2. WRAPPER METHODS FOR FEATURE EXTRACTION -
 		* Can also be termed as Greedy Algorithm for feature selection.
 		* Selects a feature by optimising performance of a specific ML model.
