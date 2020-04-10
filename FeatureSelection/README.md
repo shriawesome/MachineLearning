@@ -16,15 +16,15 @@
 
 	* PERSON'S CORRELATION COEFFICIENT
 	 	* ```
-       	      SUM((X1-X1mean)*(X2-X2mean)*(Xn-Xnmean)) / Var(X1)*Var(X2)*Var(Xn) 
-       		``` 
+       	      SUM((X1-X1mean)*(X2-X2mean)*(Xn-Xnmean)) / Var(X1)*Var(X2)*Var(Xn)
+       		```
 		* Pearson's coefficient values vary between 1 and -1:
 			* 1 is highly correlated: the more of x1, the more of x2
 			* -1 is highly correlated: the more of x1,the less of x2
 
 	* For implementation refer to Correlation_FE.ipynb and Filter_method.ipynb
 
-	--- 
+	---
 2. Statistical Methods with Filter Methods -
 	Several methods that rely on Filter methods for Feature Selection :
 <br>	Statistical Methods
@@ -33,7 +33,7 @@
 <br>	|- Univariate Tests
 <br>	|- Univariate roc-auc/rmse
 
-		[Note: 
+		[Note:
 		1. None of the above methods take into consideration variable redundancy.
 		2. All the dependency is checked in the light of target variables.]
 
@@ -43,14 +43,14 @@
 		* If X and Y are independent, then knowing X does not give any inforamation about Y and vice versa.
 		* MI is the same as the ```entropy of X``` and as the ```entropy of Y```.
 		* Popular scikit learn modules :-
-			* ```sklearn.feature_selection - mutual_info_classify and mutual_info_regression```	
+			* ```sklearn.feature_selection - mutual_info_classify and mutual_info_regression```
 
 	* Fisher Score - Chi-square implementation in sklearn
 		* This score should be used to evaluate `Categorical Variables` in a `Classification` tasks.
 		* Compute chi-squared stats between each non-negative feature and Class.
 		* It compares observed distribution of the different classes of Y among different categories of the feature, against the expected distribution of the target classes, regardless of the feature categories.
 		* Popular scikit learn modules :-
-			* `sklearn.feature_selection -  chi2` 
+			* `sklearn.feature_selection -  chi2`
 
 	* Univariate Feature Selection(ANOVA)
 		* It works by selecting the features based on univariate statistical tests(ANOVA).
@@ -63,9 +63,34 @@
 		* First it works by building a ML model with the given feature, to predict the target.
 		* Typically decision tree is used for predicting in classification problem.
 		* Second, it makes predictions using the model and the mentioned feature.
-		* Third, it ranks the features accoding to the ML metric(roc-aur or mse).	
+		* Third, it ranks the features accoding to the ML metric(roc-aur or mse).
 		* It then selects the highest ranked features
 		* Popular scikit learn modules :-
 			* `sklearn.metrics - roc_auc_score, mean_squared_error`
 
-	--- 
+	---
+
+	2. WRAPPER METHODS FOR FEATURE EXTRACTION -
+		* Can also be termed as Greedy Algorithm for feature selection.
+		* Selects a feature by optimising performance of a specific ML model.
+		* If follows a sequential process to select the features i.e. sequential FS algorithm adds/removes feature at the time based on classifier performance
+		until a feature subset of the desired size 'k' is reached, or any other criteria is met.
+		* <br> 3 techniques broadly :-
+			<br> |- Step Forward Feature selection
+			<br> |- Step Backward Feature selection
+			<br> |- Exhaustive Feature Selection
+
+		* Step Forward Feature Selection method :<br>
+				Evaluate all subsets  -> Choose the one that  ->	Evaluate all subsets of	-> Evaluate algorithm Performance -> Repeat until criteria is met.
+		<br>of 1 features 				<br> performs the best  <br>2 features(the first
+																											<br>selected and other).
+
+		* Step backward works in the same fashion but by removing the feature one by one.
+		* Exhaustive FS :
+			1. Makes all possible feature subsets from 1 to n(Total features).
+			2. The one with the best performance is selected.
+
+		* DISADVANTAGE :-
+			* Feature space optimised for specific algorithm.
+			* Extremely computationally expensive.
+			* Often not feasible because of number of features.
