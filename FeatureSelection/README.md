@@ -25,53 +25,51 @@
 	* For implementation refer to Correlation_FE.ipynb and Filter_method.ipynb
 
 	---
-2. Statistical Methods with Filter Methods -
-	Several methods that rely on Filter methods for Feature Selection :
-<br>	Statistical Methods
-<br>	|- Information Gain
-<br>	|- Fisher Score
-<br>	|- Univariate Tests
-<br>	|- Univariate roc-auc/rmse
+	2. Statistical Methods with Filter Methods -
+		Several methods that rely on Filter methods for Feature Selection :
+	<br>	Statistical Methods
+	<br>	|- Information Gain
+	<br>	|- Fisher Score
+	<br>	|- Univariate Tests
+	<br>	|- Univariate roc-auc/rmse
 
-		[Note:
-		1. None of the above methods take into consideration variable redundancy.
-		2. All the dependency is checked in the light of target variables.]
+			[Note:
+			1. None of the above methods take into consideration variable redundancy.
+			2. All the dependency is checked in the light of target variables.]
 
-	* Information Gain / Mutual Information
-		* Measures how much information the presence/absence of a feature contributes to making the correct prediction on Y.
-		* MI measures the information that X and Y share: how much knowing one can reduce uncertainty about the other.
-		* If X and Y are independent, then knowing X does not give any inforamation about Y and vice versa.
-		* MI is the same as the ```entropy of X``` and as the ```entropy of Y```.
-		* Popular scikit learn modules :-
-			* ```sklearn.feature_selection - mutual_info_classify and mutual_info_regression```
+		* Information Gain / Mutual Information
+			* Measures how much information the presence/absence of a feature contributes to making the correct prediction on Y.
+			* MI measures the information that X and Y share: how much knowing one can reduce uncertainty about the other.
+			* If X and Y are independent, then knowing X does not give any inforamation about Y and vice versa.
+			* MI is the same as the ```entropy of X``` and as the ```entropy of Y```.
+			* Popular scikit learn modules :-
+				* ```sklearn.feature_selection - mutual_info_classify and mutual_info_regression```
 
-	* Fisher Score - Chi-square implementation in sklearn
-		* This score should be used to evaluate `Categorical Variables` in a `Classification` tasks.
-		* Compute chi-squared stats between each non-negative feature and Class.
-		* It compares observed distribution of the different classes of Y among different categories of the feature, against the expected distribution of the target classes, regardless of the feature categories.
-		* Popular scikit learn modules :-
-			* `sklearn.feature_selection -  chi2`
+		* Fisher Score - Chi-square implementation in sklearn
+			* This score should be used to evaluate `Categorical Variables` in a `Classification` tasks.
+			* Compute chi-squared stats between each non-negative feature and Class.
+			* It compares observed distribution of the different classes of Y among different categories of the feature, against the expected distribution of the target classes, regardless of the feature categories.
+			* Popular scikit learn modules :-
+				* `sklearn.feature_selection -  chi2`
 
-	* Univariate Feature Selection(ANOVA)
-		* It works by selecting the features based on univariate statistical tests(ANOVA).
-		* The methods based on F-test estimates the degree of linear dependency between the feature and the target.
-		* These methods also assume that the variables follow Gaussian distribution.
-		* Popular scikit learn modules :-
-			* `sklearn.feature_selection - f_classif,f_regression`
+		* Univariate Feature Selection(ANOVA)
+			* It works by selecting the features based on univariate statistical tests(ANOVA).
+			* The methods based on F-test estimates the degree of linear dependency between the feature and the target.
+			* These methods also assume that the variables follow Gaussian distribution.
+			* Popular scikit learn modules :-
+				* `sklearn.feature_selection - f_classif,f_regression`
 
-	* Univariate ROC-AUC or MSE
-		* First it works by building a ML model with the given feature, to predict the target.
-		* Typically decision tree is used for predicting in classification problem.
-		* Second, it makes predictions using the model and the mentioned feature.
-		* Third, it ranks the features accoding to the ML metric(roc-aur or mse).
-		* It then selects the highest ranked features
-		* Popular scikit learn modules :-
-			* `sklearn.metrics - roc_auc_score, mean_squared_error`
+		* Univariate ROC-AUC or MSE
+			* First it works by building a ML model with the given feature, to predict the target.
+			* Typically decision tree is used for predicting in classification problem.
+			* Second, it makes predictions using the model and the mentioned feature.
+			* Third, it ranks the features accoding to the ML metric(roc-aur or mse).
+			* It then selects the highest ranked features
+			* Popular scikit learn modules :-
+				* `sklearn.metrics - roc_auc_score, mean_squared_error`
 
 	---
-
-1. FILTER METHODS - CORRELATION
-
+	
 2. WRAPPER METHODS FOR FEATURE EXTRACTION -
 		* Can also be termed as Greedy Algorithm for feature selection.
 		* Selects a feature by optimising performance of a specific ML model.
