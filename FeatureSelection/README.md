@@ -113,4 +113,5 @@
 	<br>|- Ridge (l2 Regularisation)
 	<br>|- Elastic net (l1/l2 Regularisation)
 		* All the above techniques have an additional penalty term associated with the cost function along with the original measure of fit.
-			* Lasso contains a penalty term :` <img src="http://latex.codecogs.com/svg.latex?\lambda*|\theta|" border="0"/> `
+			* Lasso contains a penalty term : <img src="http://latex.codecogs.com/svg.latex?\lambda*|\theta|" border="0"/>
+			* Ridge contains a penalty term : <img src="http://latex.codecogs.com/svg.latex?\lambda*(\theta)^2" border="0"/>
