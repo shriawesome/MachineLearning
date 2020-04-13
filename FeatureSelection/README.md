@@ -107,10 +107,10 @@
 		* Derive the feature importance.
 		* Remove non-important features.
 
-	3.1. Regularisation :-
+	1. Regularisation :-
 		* There are basically 3 Regularisation techniques widely used :
 	<br>|- Lasso (l1 Regularisation)
 	<br>|- Ridge (l2 Regularisation)
 	<br>|- Elastic net (l1/l2 Regularisation)
 		* All the above techniques have an additional penalty term associated with the cost function along with the original measure of fit.
-			* Lasso contains a penalty term : `<img src="http://latex.codecogs.com/svg.latex?\lambda*|\theta|" border="0"/>`
+			* Lasso contains a penalty term : <img src="http://latex.codecogs.com/svg.latex?\lambda*|\theta|" border="0"/>
