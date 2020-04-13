@@ -116,12 +116,12 @@
 			* Lasso contains a penalty term : <img src="http://latex.codecogs.com/svg.latex?\lambda*|\theta|" border="0"/>
 			* Ridge contains a penalty term : <img src="http://latex.codecogs.com/svg.latex?\lambda*(\theta)^2" border="0"/>
 
-		1. L1(Regularisation) Regularisation :
+		1. L1(Lasso) Regularisation :
 			* This can be used for feature selection from a given set of features for linear models.
-			* It reduces the feature coefficient/weights(i.e. <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/>)) to exactly 0.
+			* It reduces the feature coefficient/weights(i.e. <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/>) to exactly 0.
 			* It can be used to tackle the problem of `Bias-Variance` tradeoff.
 				* If the value of <img src="http://latex.codecogs.com/svg.latex?\lambda" border="0"/> is high the the value of <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/>'s would be less or may be 0 hence may result in Bias problem with feature sparsity.
-				* If the value of <img src="http://latex.codecogs.com/svg.latex?\lambda" border="0"/> is small the the value of <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/>'s would be large and hence may result in Variance problem with large number of features.
+				* If the value of <img src="http://latex.codecogs.com/svg.latex?\lambda" border="0"/> is small then the value of <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/>'s would be large and hence may result in Variance problem with large number of features.
 				* This inverse relationship can be attributed to The `Cost function` as we try to minimise the function.
 			* Because of pt. 2 above it can be used for feature selection task.
 
