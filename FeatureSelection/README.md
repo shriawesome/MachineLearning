@@ -132,7 +132,7 @@
 
 	2. Feature Selection based on coefficient values in Linear Models :-
 		* Linear regression is a straight forward way of predicting the target based on different features.
-		* Also it assumes that there is a linear relationship between the target(Y) and the inputs(X) i.e. Y=<img src="http://latex.codecogs.com/svg.latex?\theta\textsubscript{0}" border="0"/> 0+<img src="http://latex.codecogs.com/svg.latex?\theta\textsubscript{1}X\textsubscript{1}" border="0"/>+...+<img src="http://latex.codecogs.com/svg.latex?\theta\textsubscript{N}X\textsubscript{N}" border="0"/>NXN
+		* Also it assumes that there is a linear relationship between the target(Y) and the inputs(X) i.e. Y=<img src="http://latex.codecogs.com/svg.latex?\theta\textsubscript{0}" border="0"/> +<img src="http://latex.codecogs.com/svg.latex?\theta\textsubscript{1}X\textsubscript{1}" border="0"/>+...+<img src="http://latex.codecogs.com/svg.latex?\theta\textsubscript{N}X\textsubscript{N}" border="0"/>
 		* Hence the magnitude of the coefficients of X's directly influences the importance of that respective feature for prediction.
 		* The magnitudes of the coefficients are directly affected by the scale of the corresponding feature.
 		* Hence in case of linear models it is important to normalise the features into the same scale.
