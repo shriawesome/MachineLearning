@@ -129,3 +129,17 @@
 			* Ride regularisation can't be used for feature selection as it doesn't reduce the value of <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> to 0 but reduces to very small values.
 			* Because of this we have large features of very less importance as well for the task of prediction.
 			* It can be used to improve the performance of the model.
+
+	2. Feature Selection based on coefficient values in Linear Models :-
+		* Linear regression is a straight forward way of predicting the target based on different features.
+		* Also it assumes that there is a linear relationship between the target(Y) and the inputs(X) i.e. Y=<img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> 0+<img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/>1X1+...+<img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/>NXN
+		* Hence the magnitude of the coefficients of X's directly influences the importance of that respective feature for prediction.
+		* The magnitudes of the coefficients are directly affected by the scale of the corresponding feature.
+		* Hence in case of linear models it is important to normalise the features into the same scale.
+		* Assumptions that needs to be kept in mind for linear models w.r.t to X's are :
+			* Linear relationship with the target i.e. Y.
+			* It follows normal distribution.
+			* X's should not be correlated among themselves.
+			* Variance should be the same.
+
+			
