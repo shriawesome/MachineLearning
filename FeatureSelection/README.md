@@ -151,7 +151,7 @@
 		<br>|- Gini Index
 		<br>|- Information gain
 			* For Regression :
-				|- Variance
+		<br>|- Variance
 		* Random Forests are different than DTs in a way that it can in parallel create many different single trees, whereas in Gradient Boosted Trees many single trees are created based on improving performance from the previous trees.
 		* In each of the above case different sets of features are used for creating trees.
 		* A feature can be selected based on the importance of that feature in predicting the target.
@@ -167,6 +167,6 @@
 			* Correlated features tend to show similar importance in predicting the target, which when used alone can high importance value in general.
 			* Lesser amount of data when used for model development can often lead to Overfitting.
 		* Procedure for feature Selection :
-			a. Build a random forest.
-			b. Determine feature importance.
-			c. Select the features with the highest importance.
+	<br> a. Build a random forest.
+	<br> b. Determine feature importance.
+	<br> c. Select the features with the highest importance.
