@@ -141,3 +141,32 @@
 			* It follows normal distribution.
 			* X's should not be correlated among themselves.
 			* Variance should be the same.
+
+	3. SELECTING FEATURES BASED ON TREE IMPORTANCE :-
+		* Trees like Decision Trees, Random Forests and even Gradient Boosted Trees can be used for the task of feature selection.
+		* DTs are in general a sequence of decisions made on each node based on different feature at a time.
+		* Feature is selected based on which particular feature reduces the impurity in the model.
+		* This impurity is measured as :
+			* For Classification :
+		<br>|- Gini Index
+		<br>|- Information gain
+			* For Regression :
+				|- Variance
+		* Random Forests are different than DTs in a way that it can in parallel create many different single trees, whereas in Gradient Boosted Trees many single trees are created based on improving performance from the previous trees.
+		* In each of the above case different sets of features are used for creating trees.
+		* A feature can be selected based on the importance of that feature in predicting the target.
+		* Once the tree is trained it assigns a numerical value to each selected feature that is nothing but the importance of that feature.
+		* Advantages :
+			* Trees are very good at generalising(i.e. reducing Overfitting)
+			* Trees work very good with the missing data and simply substituting a missing value with 0 or so it replaces it with an apt value.
+			* Trees also work with the Categorical Variables.
+			* Models created at the end are highly accurate.
+			* Trees tend to reveal non-correlated relations between the features and the target.
+		* Disadvantages :
+			* Trees are biased towards highly Categorical Data.
+			* Correlated features tend to show similar importance in predicting the target, which when used alone can high importance value in general.
+			* Lesser amount of data when used for model development can often lead to Overfitting.
+		* Procedure for feature Selection :
+			a. Build a random forest.
+			b. Determine feature importance.
+			c. Select the features with the highest importance.
