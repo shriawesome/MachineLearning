@@ -173,3 +173,8 @@
 
 		* To avoid the issue of Correlated features on can go for Recursive Feature Elimination(RFE) method.
 		* Instead of removing features with less feature importance one can remove one feature at a time and then calculate the feature importance.
+		* This method is a hybrid between embedded and wrapper method. The procedure is as follows :
+			* Build RandomForest using all the features.
+			* Remove features with less importance.
+			* Again build RandomForest and recalculate the importance.
+			* Repeat this till a certain criteria is met.
