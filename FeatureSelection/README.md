@@ -170,3 +170,6 @@
 	<br> a. Build a random forest.
 	<br> b. Determine feature importance.
 	<br> c. Select the features with the highest importance.
+
+		* To avoid the issue of Correlated features on can go for Recursive Feature Elimination(RFE) method.
+		* Instead of removing features with less feature importance one can remove one feature at a time and then calculate the feature importance.
