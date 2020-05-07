@@ -51,7 +51,7 @@ class AdalineGD:
 
         for i in range(self.n_iter):
             # Unlike Perceptron we'll calculate the net_input for all the n_samples
-            net_input=np.dot(self.w_[1:],X) + self.w_[0]
+            net_input=np.dot(X,self.w_[1:]) + self.w_[0]
             errors=(y-net_input)
             self.w_[1:]+=self.eta*np.dot(X.T,errors)     # Transpose is needed so as to make matrix multiplication possible
             self.w_[0]+=self.eta*errors.sum()
