@@ -15,7 +15,7 @@
   <br> z= <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{0}x\textsubscript{0}" border="0"/> <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{1}x\textsubscript{1}" border="0"/> +... + <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{m}x\textsubscript{m}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?w\textsuperscript{T}x" border="0"/>
   * And :
   <br> ![Revised Decision F'n](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/d_1_1.png)
-  * In machine learning, the term <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{0}" border="0"/>=-<img src="http://latex.codecogs.com/svg.latex?\thEta" border="0"/> is said to be a **Bias unit**.
+  * In machine learning, the term <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{0}" border="0"/>=-<img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> is said to be a **Bias unit**.
   * The following diagram illustrates how the net input of the perceptron can be used for binary classification(1 or -1) with the linear decision function that can separate two linearly separable classes.
   * ![Explain](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/exp_1.png)
   * The Perceptron learning rule :
@@ -24,7 +24,7 @@
       * Predict the output using the **Unit Step** function.
       * Update all the weights accordingly.
   * Weights are updating using the following criteria
-    - <img src="http://latex.codecogs.com/svg.latex?\Delta" border="0"/>
+    - <img src="http://latex.codecogs.com/svg.latex? w\textsubscript{j}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex? w\textsubscript{j}" border="0"/>+<img src="http://latex.codecogs.com/svg.latex?\Delta w\textsubscript{j}" border="0"/>
   * The convergence of the ith training sample is only guaranteed if the two classes are linearly separable and the learning rate is comparatively small.
   * If the classes are not linearly separable we can define number of **Epochs** over the training samples, otherwise the perceptron will never stop updating the weights.
   * ![Explanation](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/exp_2.png)
