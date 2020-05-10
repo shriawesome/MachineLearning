@@ -37,7 +37,7 @@
 
 - - -
 ### SOURCE :
-  * [Python Machine Learning by Sebastian Raschka & Vahid Mirjalili]
+  * [Python Machine Learning by Sebastian Raschka & Vahid Mirjalili](https://books.google.co.in/books/about/Python_Machine_Learning.html?id=_plGDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
 
 ### Contribution :
   * [Shrikant Kendre](https://www.linkedin.com/in/shrikant-kendre-2941a6143/)
