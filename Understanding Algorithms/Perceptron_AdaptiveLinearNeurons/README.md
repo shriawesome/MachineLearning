@@ -11,7 +11,7 @@
   * In the perceptron algorithm, the decision function is a variant of a unit step function.
   * ![Unit Step f'n](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/d_1.png)
   * For simplicity we can bring the threshold <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> on the left hand side and define a weight 0 as -<img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> and <img src="http://latex.codecogs.com/svg.latex?\x\textsubscript{0}" border="0"/> as 1, hence the equation can be written as :
-  <br> z= <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{0}x\textsubscript{0}" border="0"/> <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{1}x\textsubscript{1}" border="0"/> +... + <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{m}x\textsubscript{m}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?w\textsupscript{T}x" border="0"/>
+  <br> z= <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{0}x\textsubscript{0}" border="0"/> <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{1}x\textsubscript{1}" border="0"/> +... + <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{m}x\textsubscript{m}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?w\textsuperscript{T}x" border="0"/>
   * And :
   <br> ![Revised Decision F'n](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/d_1_1.png)
   * In machine learning, the term <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{0}" border="0"/>=-<img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> is said to be a **Bias unit**.
