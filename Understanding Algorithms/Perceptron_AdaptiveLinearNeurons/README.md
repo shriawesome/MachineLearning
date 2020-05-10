@@ -24,7 +24,7 @@
       * Predict the output using the **Unit Step** function.
       * Update all the weights accordingly.
   * Weights are updating using the following criteria
-    - <img src="http://latex.codecogs.com/svg.latex? w\textsubscript{j}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex? w\textsubscript{j}" border="0"/>+<img src="http://latex.codecogs.com/svg.latex?\Delta w\textsubscript{j}" border="0"/>
+    - <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{j}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?w\textsubscript{j}" border="0"/>+<img src="http://latex.codecogs.com/svg.latex?\Deltaw\textsubscript{j}" border="0"/>
   * The convergence of the ith training sample is only guaranteed if the two classes are linearly separable and the learning rate is comparatively small.
   * If the classes are not linearly separable we can define number of **Epochs** over the training samples, otherwise the perceptron will never stop updating the weights.
   * ![Explanation](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/exp_2.png)
