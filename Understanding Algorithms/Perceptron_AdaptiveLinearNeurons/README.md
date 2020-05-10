@@ -11,7 +11,7 @@
   * Now, if the net input of a particular sample is greater than a defined threshold, we predict class 1, and class -1 otherwise.
   * In the perceptron algorithm, the decision function is a variant of a unit step function.
   * ![Unit Step f'n](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/d_1.png)
-  * For simplicity we can bring the threshold <img src="http://latex.codecogs.com/svg.latex?\thEta" border="0"/> on the left hand side and define a weight 0 as -<img src="http://latex.codecogs.com/svg.latex?\thEta" border="0"/> and <img src="http://latex.codecogs.com/svg.latex?\x\textsubscript{0}" border="0"/> as 1, hence the equation can be written as :
+  * For simplicity we can bring the threshold <img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> on the left hand side and define a weight 0 as -<img src="http://latex.codecogs.com/svg.latex?\theta" border="0"/> and <img src="http://latex.codecogs.com/svg.latex?\x\textsubscript{0}" border="0"/> as 1, hence the equation can be written as :
   <br> z= <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{0}x\textsubscript{0}" border="0"/> <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{1}x\textsubscript{1}" border="0"/> +... + <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{m}x\textsubscript{m}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?w\textsuperscript{T}x" border="0"/>
   * And :
   <br> ![Revised Decision F'n](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/d_1_1.png)
@@ -24,10 +24,10 @@
       * Predict the output using the **Unit Step** function.
       * Update all the weights accordingly.
   * Weights are updating using the following criteria
-    - <img src="http://latex.codecogs.com/svg.latex?\w\textsubscript{j}" border="0"/>=img src="http://latex.codecogs.com/svg.latex?\w\textsubscript{j}" border="0"/>  + <img src="http://latex.codecogs.com/svg.latex?\Deltaw\textsubscript{j}" border="0"/>
+    - <img src="http://latex.codecogs.com/svg.latex?\w\textsubscript{j}" border="0"/> = <img src="http://latex.codecogs.com/svg.latex?\w\textsubscript{j}" border="0"/>+<img src="http://latex.codecogs.com/svg.latex?\Deltaw\textsubscript{j}" border="0"/>
     - where <img src="http://latex.codecogs.com/svg.latex?\Delta w\textsubscript{j}" border="0"/> can be evaluated as :
-    - <img src="http://latex.codecogs.com/svg.latex?\Deltaw\textsubscript{j}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?\Eta(y\textsuperscript{i}-y\textsubscript{pred}\textsuperscript{i})x\textsubscript{j}\textsuperscript{(i)}" border="0"/>
-    - Where img src="http://latex.codecogs.com/svg.latex?\Eta" border="0"/> is the learning rate(usually a constant between 0.0 and 1.0), img src="http://latex.codecogs.com/svg.latex?\y\textsuperscript{i}" border="0"/> is the **true class** label of the ith training sample.
+    - <img src="http://latex.codecogs.com/svg.latex?\Deltaw\textsubscript{j}" border="0"/> = <img src="http://latex.codecogs.com/svg.latex?\Eta(y\textsuperscript{i}-y\textsubscript{pred}\textsuperscript{i})x\textsubscript{j}\textsuperscript{(i)}" border="0"/>
+    - Where <img src="http://latex.codecogs.com/svg.latex?\Eta" border="0"/> is the learning rate(usually a constant between 0.0 and 1.0), <img src="http://latex.codecogs.com/svg.latex?\y\textsuperscript{i}" border="0"/> is the **true class** label of the ith training sample.
   * The convergence of the ith training sample is only guaranteed if the two classes are linearly separable and the learning rate is comparatively small.
   * If the classes are not linearly separable we can define number of **Epochs** over the training samples, otherwise the perceptron will never stop updating the weights.
   * ![Explanation](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/exp_2.png)
