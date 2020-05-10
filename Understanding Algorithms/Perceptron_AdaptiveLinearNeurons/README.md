@@ -23,10 +23,13 @@
     - Based on each observation <img src="http://latex.codecogs.com/svg.latex?\x\textsuperscript{i}" border="0"/> from the sample:
       * Predict the output using the **Unit Step** function.
       * Update all the weights accordingly.
-  * Weights are updating using the following criteria
-    - <img src="http://latex.codecogs.com/svg.latex?w\textsubscript{j}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?w\textsubscript{j}" border="0"/>+<img src="http://latex.codecogs.com/svg.latex?\Delta" border="0"/><img src="http://latex.codecogs.com/svg.latex? w\textsubscript{j}" border="0"/>
-    - where <img src="http://latex.codecogs.com/svg.latex?\Delta" border="0"/><img src="http://latex.codecogs.com/svg.latex? w\textsubscript{j}" border="0"/> :
-      - <img src="http://latex.codecogs.com/svg.latex?\Delta" border="0"/><img src="http://latex.codecogs.com/svg.latex? w\textsubscript{j}" border="0"/>=<img src="http://latex.codecogs.com/svg.latex?\Eta" border="0"/>
+  * Weights are updating using the following criteria :
+    <br> ![weights](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/w__1.png)
+
+    <br> where <img src="http://latex.codecogs.com/svg.latex?\Delta" border="0"/><img src="http://latex.codecogs.com/svg.latex?w\textsubscript{j}" border="0"/>
+    <br> ![weights](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/w_2.png)
+    <br> where <img src="http://latex.codecogs.com/svg.latex?\eta" border="0"/> is the **learning rate**(usually between 0.0 and 1.0)
+
   * The convergence of the ith training sample is only guaranteed if the two classes are linearly separable and the learning rate is comparatively small.
   * If the classes are not linearly separable we can define number of **Epochs** over the training samples, otherwise the perceptron will never stop updating the weights.
   * ![Explanation](https://github.com/shriawesome/MachineLearning/blob/master/Understanding%20Algorithms/Perceptron_AdaptiveLinearNeurons/imgs/exp_2.png)
